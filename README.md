@@ -45,7 +45,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 2. **Importe o banco de dados:**
 - Use as queries SQL fornecidas neste repositório para criar as tabelas necessárias.
 - Utilize o script para inserção dos dados ao seu banco de dados.
-- Caso não queria fazer manualmente, baixe aqui o dump do banco já populado: <a href="https://www.google.com/" target="_blank">Clique aqui para baixar seu dump já populado</a>
+*<a href="https://www.google.com/" target="_blank"> Caso não queira fazer manualmente, baixe aqui o dump do banco já populado.</a>*
 
 3. **Configure o ambiente local:**
 - Garanta que sua página web consiga se conectar ao banco de dados local (ou de hospedagem remota, se preferir).
