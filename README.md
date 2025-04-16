@@ -39,7 +39,7 @@ O projeto é dividido em algumas etapas principais:
 Para rodar o projeto localmente, siga os passos abaixo:
 
 1. **Clone o repositório:**
-- git clone https://github.com/danilodoes/biblia.git
+- ```bash git clone https://github.com/danilodoes/biblia.git```
 - Instale o MySQL e crie um banco de dados chamado biblia (ou qualquer outro nome que preferir, mas você precisaram mudar partes do código também para que funcione corretamente).
 
 2. **Importe o banco de dados:**
