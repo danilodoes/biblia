@@ -1,0 +1,134 @@
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.noto-sans-<uniquifier> {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Noto Sans", sans-serif;
+}
+
+
+header{
+    top: 0;
+    position:sticky;
+    height: 10vh;
+    width: 100%;
+    
+        .bg-nav{
+            background-color:#FF852F;
+            background-image: url("./assets/PIBJabaquara-LogoNovo.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 100%;
+            width: 100%;   
+        }
+
+        .itens-nav{
+            
+            justify-items: center;  
+            background-color: #f2a975;       
+
+            ul{
+                
+                font-size: 120%;
+                display: flex;
+                list-style: none;
+
+        
+                li{
+                    
+                    text-align: center;
+                    margin-left: 30px;
+                }
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                
+            &:hover{
+                color: #FF852F;
+                text-shadow:1px 1px 3px black;
+                
+            }
+            }
+        }
+}
+
+
+
+
+.container-search-fields{
+    /* deixei esse display flex para alteraçaõ futura para 
+    codificação da responsividade */
+    display: flex;
+    flex-direction: column;
+    /* deixei esse display flex para alteraçaõ futura para 
+    codificação da responsividade */
+
+    
+    
+    align-items: center;
+    justify-self: center;
+    max-width: 900px;
+    text-align: center;
+    /* margin: 3%; */
+    
+
+        h4{
+            margin-top: 5%;
+        }
+
+        .search-fields{
+            h1{
+                margin-top: 2%;
+    
+            }
+            p{
+                margin-top: 4%;
+                font-size: 110%;
+            }
+            span{
+                color: #FF852F;
+            }
+            input{
+                margin-top: 1%;
+                padding: 1%;
+                text-align: center;
+                border-radius: 25px;
+                font-size: 110%;
+                
+                    &:focus{
+                        outline: 3px solid #FF852F;
+                    }
+                    &:last-child{
+                        width: 20%;
+                        margin-bottom: 2%;
+                    }
+            }
+
+            margin-top: 2%;
+            padding: 5%;
+            border: 2px solid #FF852F;
+            border-radius: 25px;
+            
+        }
+}
+
+
+/* Início da responsivisade */
+@media screen and (max-width: 768px) {
+    
+  }
+
+
