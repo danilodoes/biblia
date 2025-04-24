@@ -9,6 +9,12 @@
   font-variation-settings:
     "wdth" 100;
 } */
+:root{
+    --first-color: #FF852F;
+    --second-color: #f2a975;
+    --default-border: 2px solid var(--first-color);
+    --default-box-shadow: 0px 1px 15px black;
+}
 
 *{
     margin: 0;
@@ -25,7 +31,7 @@ header{
     width: 100%;
     
         .bg-nav{
-            background-color:#FF852F;
+            background-color:var(--first-color);
             background-image: url("./assets/PIBJabaquara-LogoNovo.jpg");
             background-repeat: no-repeat;
             background-position: center;
@@ -33,102 +39,184 @@ header{
             height: 100%;
             width: 100%;   
         }
+}
 
-        .itens-nav{
+.itens-nav{
             
-            justify-items: center;  
-            background-color: #f2a975;       
+    justify-items: center;  
+    background-color: var(--second-color);       
 
-            ul{
-                
-                font-size: 120%;
-                display: flex;
-                list-style: none;
+    ul{
+        font-size: 120%;
+        display: flex;
+        list-style: none;
 
+        li{
+            
+            text-align: center;
+            margin-left: 30px;
+        }
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
         
-                li{
-                    
+        &:hover{
+            color: var(--first-color);
+            text-shadow:1px 1px 3px black;
+            
+        }
+    }
+}
+
+    .container-search-fields{
+        /* deixei esse display flex para alteraçaõ futura para 
+        codificação da responsividade */
+        display: flex;
+        flex-direction: column;
+        /* deixei esse display flex para alteraçaõ futura para 
+        codificação da responsividade */
+        
+        align-items: center;
+        justify-self: center;
+        max-width: 900px;
+        text-align: center;
+        
+            h4{
+                margin: 2% ;
+            }
+
+            .search-fields{
+                align-content: center;
+                box-shadow: var(--default-box-shadow);
+                margin: 2% 0;
+                
+                width: 640px;
+                height: 405px;
+                border: var(--default-border);
+                border-radius: 25px;
+                
+                p{
+                    margin-top: 4%;
+                    font-size: 110%;
+                }
+                span{
+                    color: var(--first-color);
+                }
+                input{
+                    margin-top: 1%;
+                    padding: 1%;
                     text-align: center;
-                    margin-left: 30px;
+                    border: 2px solid #f2a975;
+                    border-radius: 25px;
+                    font-size: 110%;
+                    
+                        &:focus{
+                            outline: var(--default-border);
+                        }
+                        &:last-child{
+                            width: 30%;
+                            margin-bottom: 2%;
+                            font-weight: 500;
+                                &:focus{
+                                    color: white;
+                                    background-color: var(--first-color);
+                                }
+                        }
                 }
             }
-            a{
-                color: white;
-                text-decoration: none;
-                
-            &:hover{
-                color: #FF852F;
-                text-shadow:1px 1px 3px black;
-                
+    }
+
+    .container-video{
+
+        /* 
+            1024x576 (HD)
+            960x540 (qHD)
+            854x480 (FWVGA)
+            800x450 (FWVGA)
+            720x405 (HD 720p, menor)
+            640x360 (nHD)
+            560x315
+            480x270 (SD)
+            400x225
+            320x180
+        */
+
+        display: flex;
+        justify-self: center; 
+        width: 640px;
+        height: 360px;
+        margin: 2% 0 2% 0;
+    
+            iframe{
+                border-radius: 15px; 
+                border: none;
+                outline: var(--default-border);
+                box-shadow: var(--default-box-shadow);
             }
-            }
-        }
-}
+    }
 
-
-
-
-.container-search-fields{
-    /* deixei esse display flex para alteraçaõ futura para 
-    codificação da responsividade */
-    display: flex;
-    flex-direction: column;
-    /* deixei esse display flex para alteraçaõ futura para 
-    codificação da responsividade */
-
-    
-    
-    align-items: center;
-    justify-self: center;
-    max-width: 900px;
-    text-align: center;
-    /* margin: 3%; */
-    
-
-        h4{
-            margin-top: 5%;
-        }
-
-        .search-fields{
-            h1{
-                margin-top: 2%;
-    
-            }
+    .container-chapter{
+        width: 640px;
+        justify-self: center;
+        margin: 2% 0;
+        
+        
             p{
-                margin-top: 4%;
-                font-size: 110%;
+                margin: 2% 0;
             }
-            span{
-                color: #FF852F;
-            }
-            input{
-                margin-top: 1%;
-                padding: 1%;
-                text-align: center;
-                border-radius: 25px;
-                font-size: 110%;
-                
-                    &:focus{
-                        outline: 3px solid #FF852F;
-                    }
-                    &:last-child{
-                        width: 20%;
-                        margin-bottom: 2%;
-                    }
-            }
-
-            margin-top: 2%;
-            padding: 5%;
-            border: 2px solid #FF852F;
-            border-radius: 25px;
             
-        }
-}
+    }
 
 
 /* Início da responsivisade */
-@media screen and (max-width: 768px) {
-    
-  }
+@media screen and (max-width: 480px) {
+    .itens-nav{
+        ul{  
+           font-size: 100%;
+       }
+   }
+
+    .container-search-fields{
+        .search-fields{
+            width: 420px;
+            height: 420px;
+        }
+    }
+
+    .container-video{
+        width: 420px;
+        height: 270px;
+    }
+
+    .container-chapter{
+        margin-top: 5%;
+        width: 420px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .itens-nav{
+        ul{  
+           font-size: 100%;
+       }
+   }
+
+    .container-search-fields{
+        .search-fields{
+            width: 350px;
+            height: 420px;
+        }
+    }
+
+    .container-video{
+        width: 350px;
+        height: 200px;
+    }
+
+    .container-chapter{
+        width: 350px;
+    }
+}
 
 
