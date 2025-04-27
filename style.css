@@ -1,14 +1,24 @@
-/* // <weight>: Use a value from 100 to 900
-// <uniquifier>: Use a unique and descriptive class name
 
-.noto-sans-<uniquifier> {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
+/* Minhas configurações padrão 
+
+______   _ _                               ______            _ _       
+|  ___| (_) |                          _   |  _  \          (_) |      
+| |_ ___ _| |_ ___    _ __   ___  _ __(_)  | | | |__ _ _ __  _| | ___  
+|  _/ _ \ | __/ _ \  | '_ \ / _ \| '__|    | | | / _` | '_ \| | |/ _ \ 
+| ||  __/ | || (_) | | |_) | (_) | |   _   | |/ / (_| | | | | | | (_) |
+\_| \___|_|\__\___/  | .__/ \___/|_|  (_)  |___/ \__,_|_| |_|_|_|\___/ 
+                     | |                                               
+                     |_|                                               
+______   _ _                                    ______                 
+|  ___| (_) |                               _   |  _  \                
+| |_ ___ _| |_ ___    _ __   __ _ _ __ __ _(_)  | | | |___ _   _ ___   
+|  _/ _ \ | __/ _ \  | '_ \ / _` | '__/ _` |    | | | / _ \ | | / __|  
+| ||  __/ | || (_) | | |_) | (_| | | | (_| |_   | |/ /  __/ |_| \__ \  
+\_| \___|_|\__\___/  | .__/ \__,_|_|  \__,_(_)  |___/ \___|\__,_|___/  
+                     | |                                               
+                     |_|                                               
+                                                           
+ */
 :root{
     --first-color: #FF852F;
     --second-color: #f2a975;
@@ -22,7 +32,16 @@
     box-sizing: border-box;
     font-family:"Noto Sans", sans-serif;
 }
-
+/*  
+                              ______ _                 _                              __ _                                                             _                                               
+ ______ ______ ______ ______  |  ___(_)               | |                            / _(_)                                                           | |                  ______ ______ ______ ______ 
+|______|______|______|______| | |_   _ _ __ ___     __| | __ _ ___    ___ ___  _ __ | |_ _  __ _ _   _ _ __ __ _  ___ ___   ___  ___   _ __   __ _  __| |_ __ __ _  ___   |______|______|______|______|
+ ______ ______ ______ ______  |  _| | | '_ ` _ \   / _` |/ _` / __|  / __/ _ \| '_ \|  _| |/ _` | | | | '__/ _` |/ __/ _ \ / _ \/ __| | '_ \ / _` |/ _` | '__/ _` |/ _ \   ______ ______ ______ ______ 
+|______|______|______|______| | |   | | | | | | | | (_| | (_| \__ \ | (_| (_) | | | | | | | (_| | |_| | | | (_| | (_| (_) |  __/\__ \ | |_) | (_| | (_| | | | (_| | (_) | |______|______|______|______|
+                              \_|   |_|_| |_| |_|  \__,_|\__,_|___/  \___\___/|_| |_|_| |_|\__, |\__,_|_|  \__,_|\___\___/ \___||___/ | .__/ \__,_|\__,_|_|  \__,_|\___/                               
+                                                                                            __/ |                                     | |                                                              
+                                                                                           |___/                                      |_|                                                                                                                                                                                                                                   
+*/
 
 header{
     top: 0;
@@ -70,7 +89,12 @@ header{
     }
 }
 
-    .container-search-fields{
+main h4{
+    text-align: center;
+        margin: 2% ;
+}
+
+.container-search-fields{
         /* deixei esse display flex para alteraçaõ futura para 
         codificação da responsividade */
         display: flex;
@@ -83,10 +107,6 @@ header{
         max-width: 900px;
         text-align: center;
         
-            h4{
-                margin: 2% ;
-            }
-
             .search-fields{
                 align-content: center;
                 box-shadow: var(--default-box-shadow);
@@ -97,7 +117,8 @@ header{
                 border: var(--default-border);
                 border-radius: 25px;
                 
-                p{
+                label{
+                    display: block;
                     margin-top: 4%;
                     font-size: 110%;
                 }
@@ -105,6 +126,7 @@ header{
                     color: var(--first-color);
                 }
                 input{
+                    
                     margin-top: 1%;
                     padding: 1%;
                     text-align: center;
@@ -126,9 +148,9 @@ header{
                         }
                 }
             }
-    }
+}
 
-    .container-video{
+.container-video{
 
         /* 
             1024x576 (HD)
@@ -155,9 +177,9 @@ header{
                 outline: var(--default-border);
                 box-shadow: var(--default-box-shadow);
             }
-    }
+}
 
-    .container-chapter{
+.container-chapter{
         width: 640px;
         justify-self: center;
         margin: 2% 0;
@@ -167,7 +189,7 @@ header{
                 margin: 2% 0;
             }
             
-    }
+}
 
 
 /* Início da responsivisade */
