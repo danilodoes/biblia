@@ -48,6 +48,10 @@ A aplicação permitirá aos usuários assistirem e escutarem a Bíblia sendo li
 - Caso esteja utilizando uma solução como o XAMPP ou WAMP, inicie o Apache e o MySQL.
 - Abra a página local do projeto no navegador para começar a testar.
 
+## Implementações futuras:
+- Permitir a busca por nome dos membros;
+- Criar "perfil do membro", onde mostrará quantos e quais capitulos ele tem gravado na aplicação;
 
 ## Conheça os bastidores:
-- <a href="https://fluff-bull-bfa.notion.site/1d7ae4a3765580e0b55eda1ab5907e93?v=1d7ae4a3765580b68b9f000c838d9e14" target="_blank">Click aqui para ter saber mais como esse projeto foi organizado e desenvolvido.</a>
+- Para saber mais como esse projeto foi *organizado e desenvolvido"   
+<a href="https://fluff-bull-bfa.notion.site/1d7ae4a3765580e0b55eda1ab5907e93?v=1d7ae4a3765580b68b9f000c838d9e14" target="_blank"> Click aqui!</a>
