@@ -1,4 +1,3 @@
-
 /* Minhas configurações padrão 
 
 ______   _ _                               ______            _ _       
@@ -19,19 +18,20 @@ ______   _ _                                    ______
                      |_|                                               
                                                            
  */
-:root{
+:root {
     --first-color: #FF852F;
     --second-color: #f2a975;
     --default-border: 2px solid var(--first-color);
-    --default-box-shadow: 0px 1px 15px black;
+    --default-box-shadow: 0px 1px 5px rgba(83, 83, 83, 0.5);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
+
 /*  
                               ______ _                 _                              __ _                                                             _                                               
  ______ ______ ______ ______  |  ___(_)               | |                            / _(_)                                                           | |                  ______ ______ ______ ______ 
@@ -43,116 +43,116 @@ ______   _ _                                    ______
                                                                                            |___/                                      |_|                                                                                                                                                                                                                                   
 */
 
-header{
+header {
     top: 0;
-    position:sticky;
+    position: sticky;
     height: 10vh;
     width: 100%;
-    
-        .bg-nav{
-            background-color:var(--first-color);
-            background-image: url("./assets/PIBJabaquara-LogoNovo.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            height: 100%;
-            width: 100%;   
-        }
+
+    .bg-nav {
+        background-color: var(--first-color);
+        background-image: url("./assets/PIBJabaquara-LogoNovo.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+    }
 }
 
-.itens-nav{
-            
-    justify-items: center;  
-    background-color: var(--second-color);       
+.itens-nav {
 
-    ul{
+    justify-items: center;
+    background-color: var(--second-color);
+
+    ul {
         font-size: 120%;
         display: flex;
         list-style: none;
 
-        li{
-            
+        li {
+
             text-align: center;
             margin-left: 30px;
         }
     }
-    
-    a{
+
+    a {
         color: white;
         text-decoration: none;
-        
-        &:hover{
+
+        &:hover {
             color: var(--first-color);
-            text-shadow:1px 1px 3px black;
-            
+            text-shadow: 1px 1px 3px black;
+
         }
     }
 }
 
-main h4{
+main h4 {
     text-align: center;
-        margin: 2% ;
+    margin: 2%;
 }
 
-.container-search-fields{
-        /* deixei esse display flex para alteraçaõ futura para 
-        codificação da responsividade */
-        display: flex;
-        flex-direction: column;
-        /* deixei esse display flex para alteraçaõ futura para 
-        codificação da responsividade */
-        
-        align-items: center;
-        justify-self: center;
-        max-width: 900px;
-        text-align: center;
-        
-            .search-fields{
-                align-content: center;
-                box-shadow: var(--default-box-shadow);
-                margin: 2% 0;
-                
-                width: 640px;
-                height: 405px;
-                border: var(--default-border);
-                border-radius: 25px;
-                
-                label{
-                    display: block;
-                    margin-top: 4%;
-                    font-size: 110%;
-                }
-                span{
-                    color: var(--first-color);
-                }
-                input{
-                    
-                    margin-top: 1%;
-                    padding: 1%;
-                    text-align: center;
-                    border: 2px solid #f2a975;
-                    border-radius: 25px;
-                    font-size: 110%;
-                    
-                        &:focus{
-                            outline: var(--default-border);
-                        }
-                        &:last-child{
-                            width: 30%;
-                            margin-bottom: 2%;
-                            font-weight: 500;
-                                &:focus{
-                                    color: white;
-                                    background-color: var(--first-color);
-                                }
-                        }
+.container-search-fields {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    max-width: 900px;
+    text-align: center;
+
+    .search-fields {
+        align-content: center;
+        box-shadow: var(--default-box-shadow);
+        margin: 2% 0;
+
+        width: 640px;
+        height: 405px;
+        border: var(--default-border);
+        border-radius: 25px;
+
+        label {
+            display: block;
+            margin-top: 4%;
+            font-size: 110%;
+        }
+
+        span {
+            color: var(--first-color);
+        }
+
+        input {
+
+            margin-top: 1%;
+            padding: 1%;
+            text-align: center;
+            border: 2px solid #f2a975;
+            border-radius: 25px;
+            font-size: 110%;
+
+            &:focus {
+                outline: var(--default-border);
+            }
+
+            &:last-child {
+                width: 30%;
+                margin-bottom: 2%;
+                font-weight: 500;
+
+                &:focus {
+                    color: white;
+                    background-color: var(--first-color);
                 }
             }
+        }
+    }
 }
 
-.container-video{
+.container-video {
 
-        /* 
+    /* 
             1024x576 (HD)
             960x540 (qHD)
             854x480 (FWVGA)
@@ -164,81 +164,70 @@ main h4{
             400x225
             320x180
         */
+    justify-self: center;
+    width: 640px;
+    height: 360px;
+    margin: 2% 0 2% 0;
 
-        display: flex;
-        justify-self: center; 
-        width: 640px;
-        height: 360px;
-        margin: 2% 0 2% 0;
-    
-            iframe{
-                border-radius: 15px; 
-                border: none;
-                outline: var(--default-border);
-                box-shadow: var(--default-box-shadow);
-            }
+    iframe {
+        border-radius: 15px;
+        border: none;
+        outline: var(--default-border);
+        box-shadow: var(--default-box-shadow);
+    }
 }
 
-.container-chapter{
-        width: 640px;
-        justify-self: center;
-        margin: 2% 0;
-        
-        
-            p{
+.container-chapter {
+    flex-direction: column;
+    gap: 20px;
+
+    width: 640px;
+    justify-self: center;
+    margin: 2% 0;
+    text-align: center;
+
+    /* p{
                 margin: 2% 0;
-            }
-            
+            } */
+
 }
 
 
 /* Início da responsivisade */
 @media screen and (max-width: 480px) {
-    .itens-nav{
-        ul{  
-           font-size: 100%;
-       }
-   }
-
-    .container-search-fields{
-        .search-fields{
-            width: 420px;
-            height: 420px;
-        }
+    .itens-nav ul {
+        font-size: 100%;
     }
 
-    .container-video{
+    .container-search-fields .search-fields {
+        width: 420px;
+        height: 420px;
+    }
+
+    .container-video {
         width: 420px;
         height: 270px;
     }
 
-    .container-chapter{
+    .container-chapter {
         margin-top: 5%;
         width: 420px;
     }
 }
-@media screen and (max-width: 426px) {
-    .itens-nav{
-        ul{  
-           font-size: 100%;
-       }
-   }
 
-    .container-search-fields{
-        .search-fields{
-            width: 350px;
-            height: 420px;
-        }
+@media screen and (max-width: 426px) {
+
+    .container-search-fields .search-fields {
+        width: 350px;
+        height: 420px;
     }
 
-    .container-video{
+    .container-video {
         width: 350px;
         height: 200px;
     }
 
-    .container-chapter{
+    .container-chapter {
         width: 350px;
     }
 }
-
-

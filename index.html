@@ -43,56 +43,39 @@
                 <h1>Preencha os campos para buscar</h1>
 
                 <section>
-                    <label class="labels" for="tf-book">
+                    <label class="labels" for="tfBook">
                         <span>1º Passo: </span>Selecione qual livro bíblico você gostaria de ouvir.
                         <sup title="Apenas o livro de Salmos está disponível até o momento">❓</sup>
                     </label>
-                    <input type="text" id="tf-book" name="tf-book" value="Salmos" readonly>
+                    <input type="text" id="tfBook" name="tfBook" value="Salmos" readonly>
 
-                    <label class="labels" for="tf-chapter">
+                    <label class="labels" for="tfChapter">
                         <span>2º Passo: </span>Agora escolha um capítulo.
                     </label>
-                    <input type="number" min="1" id="tf-chapter" name="tf-chapter" placeholder="Capítulo" required>
+                    <input type="number" min="1" id="tfChapter" name="tfChapter" placeholder="Capítulo" required>
 
-                    <label class="labels" for="btn-search">
+                    <label class="labels" for="btnSearch">
                         <span>3º Passo: </span>Basta clicar em Buscar e aguardar o vídeo carregar!
                     </label>
-                    <input type="button" name="btn-search" value="Buscar">
+                    <input type="button" name="btnSearch" id="btnSearch" value="Buscar">
                 </section>
             </div>
         </div>
-        <div class="container-video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kKaAk3BqLsY?si=h5CV71yWAbuXnyC0"
+        <div class="container-video" style="display: none;">
+            <iframe id="embedVideo" width="100%" height="100%" src="https://www.youtube.com/embed/kKaAk3BqLsY?si=h5CV71yWAbuXnyC0"
                 title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer; autoplay; encrypted-media; clipboard-write; gyroscope; picture-in-picture"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        
-        <div class="container-chapter">
-            <p class="verse-1">¹ Bem-aventurado o varão que não anda segundo o conselho dos ímpios, nem se detém no
-                caminho dos pecadores, nem se assenta na roda dos escarnecedores.
-            </p>
 
-            <p class="verse-2">
-                ² Antes, tem o seu prazer na lei do Senhor, e na sua lei medita de dia e de noite.
-            </p>
+        <div class="container-chapter" style="display: none;">
 
-            <p class="verse-3">
-                ³ Pois será como a árvore plantada junto a ribeiros de águas, a qual dá o seu fruto na estação própria,
-                e cujas folhas não caem, e tudo quanto fizer prosperará. </p>
-            <p class="verse-4">
-                ⁴ Não são assim os ímpios; mas são como a moinha que o vento espalha.
-            </p>
-
-            <p class="verse-5">
-                ⁵ Pelo que os ímpios não subsistirão no juízo, nem os pecadores na congregação dos justos.
-            </p>
-
-            <p class="verse-6">
-                ⁶ Porque o Senhor conhece o caminho dos justos; mas o caminho dos ímpios perecerá.
-            </p>
         </div>
     </main>
+
+    <script src="https://www.gstatic.com/firebasejs/11.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.7.1/firebase-firestore-compat.js"></script>
+    <script src="./app.js"></script>
 
 </body>
 
