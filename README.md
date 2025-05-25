@@ -28,7 +28,6 @@ A aplicação permitirá aos usuários assistirem e escutarem a algumas passagen
 ## Tecnologias Utilizadas  
 - **Firestore** para armazenamento de dados (Bíblia, livros, capítulos, versículos e url de acesso ao vídeo).
 - **HTML, CSS e JavaScript** para a criação da interface web e a lógica computacional do front e back-end.
-- **Python** para inserção dos dados(versículos) no banco de dados.
 
 
 ## Implementações futuras:
